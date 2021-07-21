@@ -1,0 +1,39 @@
+// main: style.less
+
+.all.active{
+    transform: translateX(20%);
+}
+
+.all{
+    transition: 0.4s;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+.menu.active{
+    transform: translateX(0);
+}
+
+.hide{
+    display: none;
+}
+
+
+@title: {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    padding-top: 115px;
+    padding-bottom: 100px;
+};
+
+@after: {
+    content: "";
+    background-color: #222222;
+    display: block;
+    width: 86px;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+

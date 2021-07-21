@@ -1,0 +1,73 @@
+// main: style.less
+
+.main{
+    background-image: url(../images/Background/BG_Computer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transform-origin: center;
+    background-color: rgb(234 120 76);
+    transition: 1s;
+}
+
+.main__color{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,rgba(255, 164, 66,0.45)0%, rgba(190, 73, 68, 0.45) 100%)
+}
+
+.main__content {
+    text-align: center;
+    padding-top: 315px;
+}
+
+.main__title {
+    font-size: 48px;
+    font-weight: 800;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    
+}
+
+.main__text {
+    font-size: 16px;
+    font-weight: 200;
+    color: #fff;
+    font-weight: 400;
+    padding-top: 35px;
+    letter-spacing: 3px;
+    padding-bottom: 285px;
+}
+
+.main__title::after {
+    content: "";
+    background-color: #fff;
+    display: block;
+    width: 86px;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.main__content--img{
+    padding-bottom: 58px;
+    animation: bouncing .5s infinite alternate both;
+    transition: .5s;
+    
+}
+
+@keyframes bouncing{
+    0%{
+        transform: translateY(0px);
+    }
+    
+    100%{
+        transform: translateY(-30px);
+    }
+    
+    
+    
+}

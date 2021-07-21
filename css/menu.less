@@ -1,0 +1,163 @@
+// main: style.less
+
+.wrapper{
+    position: relative;
+    overflow-x: hidden;
+}
+
+.menu{
+    width: 20%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f39c12;
+    transform: translateX(-100%);
+    transition: 0.4s;
+    z-index: 100;
+}
+
+.menu__list{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 50%;
+    
+}
+
+.menu__btn{
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    position: absolute;
+    right: -35px;
+}
+
+.menu__word{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+
+.close{
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    display: block;
+    cursor: pointer;
+    background: none;
+    border: 0;
+    display: none;
+}
+
+.close:focus{
+    outline: none;
+}
+
+.unactive__burger{
+    display: none;
+}
+
+.active__menu{
+    display: block;
+}
+
+.close__btn{
+    
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: transparent;
+    color: transparent;
+    transition: .3s;
+    padding: 11px 6px;
+}
+
+.close__btn::after,
+.close__btn::before{
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    transition: .3s;
+}
+
+.close__btn::after{
+    top: 10px;
+    left: 0;
+    transform: rotate(-43deg);
+}
+
+.close__btn::before{
+    top: -10px;
+    left: 0;
+    transform: rotate(43deg);
+}
+
+.burger__btn{
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    color: transparent;
+    transition: .3s;
+}
+
+.burger__btn::after,
+.burger__btn::before
+{
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    transform-origin: left;
+    transition: .3s;
+    
+}
+
+.burger__btn::after{
+    top: 10px;
+    left: 0;
+}
+
+.burger__btn::before{
+    top: -10px;
+    left: 0;
+}
+
+.burger{
+    position: absolute;
+    background: none;
+    top: 40px;
+    left: 30px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 13px 5px;
+    transition: .4s;
+    z-index: 100;
+}
+
+.burger:focus{
+    outline: none;
+}
+
+.burger.active span::after{
+    transform: rotate(-43deg);
+}
+
+.burger.active span::before{
+    transform: rotate(43deg);
+}
+
+.burger.active span{
+    height: 0;
+}

@@ -1,0 +1,44 @@
+// main: style.less
+.slick-track{
+    display: flex;
+}
+
+.slick-list{
+    overflow: hidden;
+}
+
+.choose__slider .slick-arrow{
+    display: none!important;
+}
+
+.choose__slider .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-left: 0;
+}
+
+.choose__slider .slick-dots li{
+    list-style: none;
+    margin: 0px 10px;
+}
+
+.choose__slider .slick-dots button{
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    background-color: #111;
+    border-radius: 50%;
+    border-color: #111;
+    padding: 0;
+}
+
+.choose__slider .slick-dots button:focus{
+    outline: none;
+}
+
+.choose__slider .slick-dots li.slick-active button{
+    background-color: orange;
+    border: 1px solid orange;
+}
